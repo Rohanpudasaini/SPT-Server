@@ -3,9 +3,8 @@ import logging
 from typing import Dict, List, Optional
 
 import grpc
-import numpy as np
-import speech_service_pb2 as speech_pb2
-import speech_service_pb2_grpc as speech_pb2_grpc
+import protos.speech_service_pb2 as speech_pb2
+import protos.speech_service_pb2_grpc as speech_pb2_grpc
 
 logger = logging.getLogger(__name__)
 
