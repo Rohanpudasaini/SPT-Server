@@ -283,7 +283,7 @@ async def websocket_endpoint(websocket: WebSocket, client_id: str):
                     "form_data", {}
                 ).get("amount"):
                     amount = result["form_data"]["amount"]
-                    name = result["form_data"].get("name", "")
+                    _ = result["form_data"].get("name", "")
                     navigate_message = {
                         "type": "navigate",
                         "route": "/topup.html",  # Changed from /static/topup.html
