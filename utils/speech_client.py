@@ -47,6 +47,7 @@ class SpeechServiceClient:
             )
 
             response = await self.stub.TranscribeAudioSegment(request)
+            print("response: ", response)
 
             if response.success:
                 logger.info(
